@@ -1,0 +1,40 @@
+---
+title: "R_Cheat_Sheet_CMAR"
+author: "Nicole Torrie"
+date: "14/05/2020"
+output: html_document
+---
+This document is for storage of packages, functions, and R Code useful for CMAR operations
+
+Some Mapping Packages
+```{r}
+install.packages("ggplot2")
+install.packages("ggrepel")
+install.packages("ggspatial")
+install.packages("libwgeom")
+install.packages("sf")
+install.packages("rnaturalearth")
+install.packages("rnaturalearthdata")
+install.packages("rgeos")
+install.packages("oce")
+install.packages("marmap")
+install.packages("ggsn")
+install.packages("grid")
+
+library(ggplot2) #graphical plotting - based on data frames
+library(maps) #basic mapping packages with useful spatial data (i.e., bounding polygons, land, coastlines, etc)
+library(mapdata) #even more mapping data
+library(marmap) #package to get bathymetric data
+library(dplyr) #data manipulation package
+library(tidyr) #package with extended data manipulation in addition to dplyr
+library(ggsn) #package that permits scale bars in ggplot
+library(png) #for loading images
+```
+
+Color Pallet
+```{r}
+
+```
+
+
+
