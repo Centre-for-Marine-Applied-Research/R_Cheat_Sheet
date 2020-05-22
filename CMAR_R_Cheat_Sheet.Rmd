@@ -32,7 +32,7 @@ library(ggsn) #package that permits scale bars in ggplot
 library(png) #for loading images
 ```
 
-Color Pallet
+Color Palette
 ```{r}
 
 ```
@@ -104,5 +104,22 @@ summarySE <- function(data=NULL, measurevar, groupvars=NULL, na.rm=FALSE,
   return(datac)
 }
 ```
+
+Save a high-quality ggplot
+```{r}
+# Exports high-quality figure (300 dpi is the default)
+# See ?ggsave for more info
+
+ggsave(filename = "newplot.png",
+       plot = newplot,
+       path = paste(path, "/Figures/", sep = ""),
+       device = "png",
+       width = 20, height = 15, units = "cm")
+
+```
+
+
+
+
 
 
